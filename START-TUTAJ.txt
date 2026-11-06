@@ -1,0 +1,17 @@
+ATELIER NOIR — GOTOWA STRONA
+
+1. Otwórz folder „atelier-noir”.
+2. Kliknij dwa razy plik „index.html”.
+3. Strona otworzy się w Twojej przeglądarce.
+
+Nie musisz niczego instalować ani uruchamiać w terminalu.
+
+Zawartość folderu:
+- index.html — strona główna
+- style.css — wygląd strony
+- script.js — animacje, menu i formularz
+- assets — zdjęcia dań
+
+Uwaga: formularz rezerwacji pokazuje potwierdzenie na stronie, ale nie wysyła
+wiadomości do restauracji. Do prawdziwych rezerwacji trzeba później podłączyć
+adres e-mail albo system rezerwacyjny.

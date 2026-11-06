@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Atelier Noir — współczesna kuchnia fine dining w Warszawie.">
+  <title>Atelier Noir — Fine Dining</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2311110f'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='serif' font-size='32' fill='%23f1eee7'%3EAN%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#start" aria-label="Atelier Noir, strona główna">
+      <span>ATELIER</span>
+      <span>NOIR</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Otwórz menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav" aria-label="Główna nawigacja">
+      <a href="#menu">Menu</a>
+      <a href="#historia">O nas</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="nav-cta" href="#rezerwacja">Rezerwacja</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="start">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow reveal">Warszawa · Fine dining</p>
+        <h1 class="reveal">Smak.<br>Bez kompromisów.</h1>
+        <p class="hero-copy reveal">
+          Autorska kuchnia oparta na najlepszym produkcie, ogniu i sezonie.
+        </p>
+        <a class="text-link reveal" href="#menu">Odkryj menu <span>↘</span></a>
+      </div>
+      <p class="hero-side">Kolacja · wt–sob · 17:00–23:00</p>
+      <a class="scroll-cue" href="#menu" aria-label="Przejdź do menu">
+        <span></span>
+      </a>
+    </section>
+
+    <section class="intro section-pad" id="historia">
+      <p class="eyebrow reveal">Nasza filozofia</p>
+      <div class="intro-grid">
+        <h2 class="reveal">Mniej składników.<br>Więcej znaczenia.</h2>
+        <div class="intro-copy reveal">
+          <p>
+            Gotujemy blisko natury. Każdy talerz zaczyna się od jednego wyjątkowego
+            produktu i kończy wtedy, gdy niczego nie trzeba już dodawać.
+          </p>
+          <p>
+            Menu zmienia się wraz z porami roku. Współpracujemy z małymi gospodarstwami,
+            lokalnymi rybakami i rzemieślniczymi producentami.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section section-pad" id="menu">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow reveal">Menu degustacyjne</p>
+          <h2 class="reveal">Wieczór w sześciu<br>odsłonach.</h2>
+        </div>
+        <div class="menu-price reveal">
+          <strong>490 PLN</strong>
+          <span>od osoby</span>
+        </div>
+      </div>
+
+      <div class="dish-grid">
+        <article class="dish-card reveal">
+          <div class="dish-image">
+            <img src="assets/danie-przystawka.webp" alt="Przegrzebek ze szparagami i kawiorem">
+            <span>01</span>
+          </div>
+          <div class="dish-info">
+            <h3>Przegrzebek</h3>
+            <p>biały szparag · kawior · beurre blanc</p>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-image">
+            <img src="assets/danie-glowne.webp" alt="Turbot z groszkiem i sosem szampańskim">
+            <span>02</span>
+          </div>
+          <div class="dish-info">
+            <h3>Turbot</h3>
+            <p>młody groszek · szampan · liście sezonu</p>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-image">
+            <img src="assets/deser.webp" alt="Deser z ciemnej czekolady i orzecha laskowego">
+            <span>03</span>
+          </div>
+          <div class="dish-info">
+            <h3>Czekolada</h3>
+            <p>orzech laskowy · wanilia · złoto</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="pairing reveal">
+        <p>Selekcja win</p>
+        <span>+ 290 PLN</span>
+        <p>Selekcja bezalkoholowa</p>
+        <span>+ 190 PLN</span>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="quote-inner reveal">
+        <span>“</span>
+        <blockquote>
+          Luksus to nie nadmiar.<br>To pewność, że każdy detal ma sens.
+        </blockquote>
+        <p>— Michał Wrona, szef kuchni</p>
+      </div>
+    </section>
+
+    <section class="reservation section-pad" id="rezerwacja">
+      <div class="reservation-copy">
+        <p class="eyebrow reveal">Rezerwacja</p>
+        <h2 class="reveal">Zarezerwuj<br>swój wieczór.</h2>
+        <p class="reveal">
+          Stoliki przyjmujemy od wtorku do soboty.<br>
+          Rezerwacje dla maksymalnie 6 osób.
+        </p>
+      </div>
+
+      <form class="reservation-form reveal" novalidate>
+        <label>
+          <span>Imię i nazwisko</span>
+          <input type="text" name="name" autocomplete="name" required>
+        </label>
+        <div class="form-row">
+          <label>
+            <span>Data</span>
+            <input type="date" name="date" required>
+          </label>
+          <label>
+            <span>Godzina</span>
+            <select name="time" required>
+              <option value="">Wybierz</option>
+              <option>17:00</option>
+              <option>18:00</option>
+              <option>19:00</option>
+              <option>20:00</option>
+              <option>21:00</option>
+            </select>
+          </label>
+          <label>
+            <span>Goście</span>
+            <select name="guests" required>
+              <option value="">Wybierz</option>
+              <option>1 osoba</option>
+              <option>2 osoby</option>
+              <option>3 osoby</option>
+              <option>4 osoby</option>
+              <option>5 osób</option>
+              <option>6 osób</option>
+            </select>
+          </label>
+        </div>
+        <label>
+          <span>E-mail</span>
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+        <button class="submit-button" type="submit">
+          <span>Zarezerwuj stolik</span>
+          <span>↗</span>
+        </button>
+        <p class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer id="kontakt">
+    <div class="footer-logo">ATELIER NOIR</div>
+    <div class="footer-grid">
+      <div>
+        <p class="footer-label">Adres</p>
+        <p>ul. Mokotowska 24<br>00-561 Warszawa</p>
+      </div>
+      <div>
+        <p class="footer-label">Kontakt</p>
+        <p><a href="tel:+48221122334">+48 22 112 23 34</a><br><a href="mailto:stolik@ateliernoir.pl">stolik@ateliernoir.pl</a></p>
+      </div>
+      <div>
+        <p class="footer-label">Godziny</p>
+        <p>Wt–Sob<br>17:00–23:00</p>
+      </div>
+      <div>
+        <p class="footer-label">Social</p>
+        <p><a href="#">Instagram</a><br><a href="#">Facebook</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Atelier Noir</span>
+      <span>Warszawa · Polska</span>
+    </div>
+  </footer>
+</body>
+</html>
